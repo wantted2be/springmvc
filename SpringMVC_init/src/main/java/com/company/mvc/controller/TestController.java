@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TestController {
     @RequestMapping(value = "/")
     public String index(){
+        System.out.println("");
         return "index";
     }
 }
