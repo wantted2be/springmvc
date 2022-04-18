@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h1>成功了，噢力给,success</h1><br>
+        <p th:text="${hello}">servletAPI共享域数据</p><br>
+        <p th:text="${testRequestScope}">ModelAndView共享域数据</p><br>
+        <p th:text="${testRequestModelScope}">Model共享域数据</p><br>
+        <p th:text="${testRequestMapScope}">Map共享域数据</p><br>
+        <p th:text="${testRequestModelMapScope}">ModelMap共享域数据</p><br>
+        <p th:text="${session.testSession}">Session共享域数据</p><br>
+        <p th:text="${application.testApplication}">Session共享域数据</p><br>
+    </body>
+</html>
