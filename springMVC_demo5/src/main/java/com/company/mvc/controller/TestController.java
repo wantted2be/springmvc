@@ -10,4 +10,9 @@ public class TestController {
     public String testInterceptor(){
         return "success";
     }
+    @RequestMapping(value = "/testExceptionHandler")
+    public String success(){
+        int i = 5/0;
+        return "success";
+    }
 }

@@ -44,7 +44,6 @@
     <!--配置方式可以通过ref或bean标签设置拦截器，
         通过mvc:mapping设置需要拦截的请求，
         通过mvc:exclude-mapping设置需要排除的请求，即不需要拦截的请求-->
-
     <mvc:interceptors>
         <ref bean="firstInterceptor"></ref>
         <ref bean="secondInterceptor"></ref>
@@ -59,6 +58,16 @@
 <!--        </mvc:interceptor>-->
     </mvc:interceptors>
 
+<!--    配置异常处理-->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.ArithmeticException">error</prop>
+            </props>
+        </property>
+        <!--默认放在请求域的键-->
+        <property name="exceptionAttribute" value="ex"></property>
+    </bean>
 
 
 
