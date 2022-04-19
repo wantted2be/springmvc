@@ -4,7 +4,6 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
-
     <!--扫描组件-->
     <context:component-scan base-package="com.company.mvc"></context:component-scan>
 
@@ -34,7 +33,6 @@
     <!--path：设置处理的请求地址
 	    view-name：设置请求地址所对应的视图名称-->
     <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
-    <mvc:view-controller path="/file" view-name="file"></mvc:view-controller>
 
     <!--静态资源-->
     <mvc:default-servlet-handler></mvc:default-servlet-handler>
@@ -42,5 +40,26 @@
     <!--当SpringMVC中设置任何一个view-controller时，其他控制器中的请求映射将全部失效，
         此时需要在SpringMVC的核心配置文件中设置开启mvc注解驱动的标签：-->
     <mvc:annotation-driven></mvc:annotation-driven>
+
+    <!--配置方式可以通过ref或bean标签设置拦截器，
+        通过mvc:mapping设置需要拦截的请求，
+        通过mvc:exclude-mapping设置需要排除的请求，即不需要拦截的请求-->
+
+    <mvc:interceptors>
+        <ref bean="firstInterceptor"></ref>
+        <ref bean="secondInterceptor"></ref>
+        <!--<bean class="com.company.mvc.intercepters.FirstInterceptor"></bean>-->
+        <!--<ref bean="firstInterceptor"></ref>-->
+<!--        <mvc:interceptor>-->
+<!--            &lt;!&ndash;拦截所有&ndash;&gt;-->
+<!--            <mvc:mapping path="/**"/>-->
+<!--            &lt;!&ndash;排除/&ndash;&gt;-->
+<!--            <mvc:exclude-mapping path="/"/>-->
+<!--            <ref bean="firstInterceptor"></ref>-->
+<!--        </mvc:interceptor>-->
+    </mvc:interceptors>
+
+
+
 
 </beans>

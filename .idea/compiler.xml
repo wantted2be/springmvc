@@ -11,6 +11,7 @@
         <module name="SpringMVC-jsp" />
         <module name="SpringMVC_demo2" />
         <module name="SpringMVC_demo1" />
+        <module name="springMVC_demo5" />
         <module name="SpringMVC_init" />
         <module name="SpringMVC-restful" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="SpringMVC_demo2" target="1.8" />
       <module name="SpringMVC_demo3" target="1.8" />
       <module name="SpringMVC_demo4" target="1.8" />
+      <module name="springMVC_demo5" target="1.8" />
       <module name="SpringMVC_init" target="1.8" />
     </bytecodeTargetLevel>
   </component>

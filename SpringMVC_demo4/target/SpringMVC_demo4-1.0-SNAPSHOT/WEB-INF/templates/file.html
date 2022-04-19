@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>测试文件的长传和下载</title>
+    </head>
+    <body>
+        <a th:href="@{/testDown}">下载1.jpg</a>
+        <form th:action="@{/testUp}" method="post" enctype="multipart/form-data">
+            头像：<input type="file" name="photo"><br>
+        </form>
+    </body>
+</html>
