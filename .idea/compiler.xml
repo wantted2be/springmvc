@@ -14,11 +14,13 @@
         <module name="springMVC_demo5" />
         <module name="SpringMVC_init" />
         <module name="SpringMVC-restful" />
+        <module name="springMVC_annotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SpringMVC-jsp" target="1.8" />
       <module name="SpringMVC-restful" target="1.8" />
+      <module name="springMVC_annotation" target="1.8" />
       <module name="SpringMVC_demo1" target="1.8" />
       <module name="SpringMVC_demo2" target="1.8" />
       <module name="SpringMVC_demo3" target="1.8" />

@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC-jsp" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC-restful" />
+    <file type="web" url="file://$PROJECT_DIR$/springMVC_annotation" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC_demo1" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC_demo2" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC_demo3" />
@@ -21,6 +22,7 @@
         <option value="$PROJECT_DIR$/SpringMVC-restful/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVC_demo4/pom.xml" />
         <option value="$PROJECT_DIR$/springMVC_demo5/pom.xml" />
+        <option value="$PROJECT_DIR$/springMVC_annotation/pom.xml" />
       </list>
     </option>
   </component>
